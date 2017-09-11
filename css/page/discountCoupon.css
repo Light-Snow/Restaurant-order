@@ -1,0 +1,64 @@
+body{
+	background-color: #f4f4f4;
+}
+.regular-checkbox {
+	display: none;
+}
+.regular-checkbox + label {
+	position: relative;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url("../../images/ucenter/particulars/checkbox.png") no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.regular-checkbox:checked + label:after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	width: 14px;
+	height: 14px;
+	background: url("../../images/ucenter/particulars/checkbox_cur.png") no-repeat;
+	background-size: 100% 100%;
+	color: #4dbd15;
+}
+.discount_bg{
+	position: relative;
+	width: 9.5rem;
+	height: 3.333333rem;
+	margin: 0.266667rem auto 0;
+	overflow: hidden;
+	background: url("../../images/ucenter/discountCoupon/bg.png") no-repeat center;
+	background-size: 9.5rem 100%;
+}
+.discount_bg > div:nth-child(2){
+	width: 2.853333rem;
+	text-align: center;
+}
+.discount_bg:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.986667rem;
+	height: 0.973333rem;
+	background: url("../../images/ucenter/discountCoupon/icon.png") no-repeat;
+	background-size: 100% 100%;
+}
+.cur:before{
+	background: url("../../images/ucenter/discountCoupon/icon_cur.png") no-repeat;
+	background-size: 100% 100%;
+}
+.cur,
+.cur .f-red{
+	color: #7e7e7e;
+}
+.f25{
+	font-size: 25px;
+}
+.bg_white{
+	background-color: #fff;
+}

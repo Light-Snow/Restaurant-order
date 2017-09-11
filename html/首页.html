@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta content="yes" name="apple-mobile-web-app-capable" />
+      <meta content="yes" name="apple-touch-fullscreen" />
+      <meta content="telephone=no,email=no" name="format-detection" />
+      <meta content="maximum-dpr=1" name="flexible" />
+      <meta content="modeName=750-12" name="grid" />
+      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui,width=320">
+      <link rel="stylesheet" type="text/css" href="../css/base.css">
+      <link rel="stylesheet" type="text/css" href="../css/common.css?v=20170804"/>
+      <link rel="stylesheet" type="text/css" href="../css/page/swiper-3.4.2.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/page/index.css">
+      <script type="text/javascript" src="../js/lib/flexible/flexible.debug.js"></script>
+      <script type="text/javascript" src="../js/require.js"></script>
+      <script type="text/javascript" src="../js/config.js"></script>
+      <title>姻缘签</title>
+  </head>
+    <body class="overflow-y-hidden" onload= setTimeout("document.getElementById('loading').style.display='none'",150)>
+      	<div id="loading"></div>
+      	<div id="ui_wrap">
+          	<nav>
+          		<div class="left_nav_body">
+          			<ul class="left_nav scrollbar">
+          				<li>特色</li>
+          				<li>锅底</li>
+          				<li>精品涮肉</li>
+          				<li>蔬菜<br/>豆制品菜</li>
+                  <li>荤串</li>
+                  <li>调卤菜、<br/>凉菜</li>
+                  <li>风味主食</li>
+                  <li>经典丸滑</li>
+                  <li>川城果酒</li>
+                  <li>时尚饮品</li>
+          			</ul>
+          		</div>
+          	</nav>
+          	<div class="content scrollbar" id="content">
+          		<div class="box">
+                <div class="title">特色</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/01.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="member"><img src="./../images/index/icon/member_img.jpg"></div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                        <del><i class="f10">￥</i>23.9</del>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                    <div class="label">赠送牛蛙一份</div>
+                  </div>
+                </div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/02.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">牛蛙/份</div>
+                    <div class="member"><img src="./../images/index/icon/member_img.jpg"></div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                        <del>￥28.9</del>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/05.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">牛蛙/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                        <del>￥28.9</del>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                    <div class="label">赠送牛蛙一份</div>
+                  </div>
+                </div>
+              </div>
+          		<div class="box">
+                <div class="title">锅底</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/03.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/04.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">秘制牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/05.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">秘制牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          		<div class="box">
+                <div class="title">精品涮肉</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/03.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          		<div class="box">
+                <div class="title">蔬菜豆制品菜</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/03.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          		<div class="box">
+                <div class="title">荤串</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/02.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          		<div class="box">
+                <div class="title">调卤菜、凉菜</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/05.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="title">风味主食</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/04.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="title">经典丸滑</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/03.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="title">川城果酒</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/02.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="title">时尚饮品</div>
+                <div class="f-dte list_main">
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="img"><img src="./../images/index/data/01.jpg"></div>
+                  </div>
+                  <div class="f-dtl f-tal f-vat">
+                    <div class="name">招牌小牛肉/份</div>
+                    <div class="moeny">
+                      <span>
+                        <strong><i class="f12">￥</i>20.9</strong>
+                      </span>
+                      <span>
+                        <button class="subtract hide" onclick="subtract(this)"></button>
+                        <strong class="num hide">0</strong>
+                        <button class="add addcar" onclick="add(this)"></button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          	</div>
+            <footer>
+              <div class="ui_footer">
+                <div class="f_number" id="end" onclick="slder('#slder_01','#slder_bg_01')">
+                  <span>NO.<strong>20</strong></span>
+                  <br/>
+                  <span>包厢</span>
+                  <div class="f_number_num" id="f_number_num">0</div>
+                </div>
+                <div class="f_money">共计<strong>365.0</strong>元</div>
+                <div class="f_btn"><a href="javascript:;" onclick="slder('#slder_02','#slder_bg_02')" >提交订单</a></div>
+              </div>
+            </footer>
+
+            <!-- 向上滑动 -->
+            <div class="slder" id="slder_01">
+              <div class="slder_content slder_header_after slder_header_before" >
+                <div class="slder_header clearfix">
+                  <div class="f-fl slder_title">已选餐品</div>
+                  <div class="f-fr slder_delete">清空全部</div>
+                </div>
+                <div class="slder_body scrollbar">
+                  <div class="f-dte slder_box">
+                    <div class="f-dtl f-vam f-tal pl20"><span class="f13 f-black">招牌小牛肉／份</span></div>
+                    <div class="f-dtl f-vam f-tar pr20">
+                      <div class="slder_moeny">
+                        <span>
+                          <strong><i class="f12">￥</i>20.9</strong>
+                        </span>
+                        <span>
+                          <button class="subtract show_ib" onclick="subtract(this)"></button>
+                          <strong class="num show_ib">0</strong>
+                          <button class="add cur" onclick="add(this)"></button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="f-dte slder_box">
+                    <div class="f-dtl f-vam f-tal pl20"><span class="f13 f-black">招牌小牛肉／份</span></div>
+                    <div class="f-dtl f-vam f-tar pr20">
+                      <div class="slder_moeny">
+                        <span>
+                          <strong><i class="f12">￥</i>20.9</strong>
+                        </span>
+                        <span>
+                          <button class="subtract show_ib" onclick="subtract(this)"></button>
+                          <strong class="num show_ib">0</strong>
+                          <button class="add cur" onclick="add(this)"></button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="f-dte slder_box">
+                    <div class="f-dtl f-vam f-tal pl20"><span class="f13 f-black">招牌小牛肉／份</span></div>
+                    <div class="f-dtl f-vam f-tar pr20">
+                      <div class="slder_moeny">
+                        <span>
+                          <strong><i class="f12">￥</i>20.9</strong>
+                        </span>
+                        <span>
+                          <button class="subtract show_ib" onclick="subtract(this)"></button>
+                          <strong class="num show_ib">0</strong>
+                          <button class="add cur" onclick="add(this)"></button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <i class="slder_bg" id="slder_bg_01"></i>
+            </div>
+      	</div>
+   	  <script type="text/javascript">
+      //向上滑动
+      function slder(el,bg) {
+          $(el).toggleClass('slder_cur');
+          $(bg).on('click',
+          function() {
+              $(el).removeClass('slder_cur');
+          });
+          
+      }
+      //产品数量增加
+      function add(el) {
+          var $this = $(el);
+          var num = Number($this.siblings('.num').text());
+          var f_number_num = Number($('#f_number_num').text());
+          $('#f_number_num').addClass('show');
+          $('#f_number_num').html(++f_number_num);
+          $this.addClass('cur');
+          $this.siblings('.subtract').removeClass('cur').removeClass('hide');
+          if (num < 0) {
+              return false;
+          } else {
+              $this.siblings('.num').text(++num).removeClass('hide');
+          };
+          
+      }
+
+      //产品数量减少
+      function subtract(el) {
+          var $this = $(el);
+          var num = Number($this.siblings('.num').text()); 
+          var f_number_num = Number($('#f_number_num').text());
+          if (num == 0) {
+              return false;
+          } else if (num <= 1) {
+              $this.addClass('hide').siblings('.num').addClass('hide').text(0);
+              $this.siblings('.add').removeClass('cur');
+              $('#f_number_num').html(--f_number_num);
+              if (f_number_num==0) {
+                $('#f_number_num').removeClass('show');
+              };
+              return false;
+          } else {
+              $this.siblings('.num').text(--num);
+              $('#f_number_num').html(--f_number_num);
+          };
+      }
+
+      require(['jquery', 'layer'],
+      function() {
+          //layer 弹框初始化
+          layer.config({
+              path: '../js/lib/layer/'
+          });
+
+          $('.left_nav li').eq(0).addClass('active');
+
+          $(".box").each(function() {
+              var el = $(this);
+              var index = el.index();
+              var el_offsetTop = $(".box").eq(index).offset().top;
+              el.attr('offsetTop', el_offsetTop);
+          });
+
+          $('#content').bind("touchmove touchend",
+          function() {
+              var el_scrollTop = $(this).scrollTop();
+              $(".box").each(function() {
+                  var el = $(this);
+                  var index = el.index();
+                  var el_offsetTop = $(".box").eq(index).attr('offsetTop');
+                  if (el_scrollTop >= el_offsetTop) {
+                      $(".left_nav li").eq(index).addClass("active").siblings().removeClass("active");
+                  }
+              });
+          });
+
+          $('.left_nav li').bind("click",
+          function() {
+              var el = $(this);
+              var index = el.index();
+              var offsetTop = $(".box").eq(index).attr('offsetTop');
+              $('#content').stop().animate({
+                  scrollTop: offsetTop
+              },200);
+              el.addClass("active").siblings().removeClass("active");
+
+          });
+
+      });
+
+      require(['fly'],
+      function() { //飞入购物车模块
+          var offset = $("#end").offset(); //结束的地方的元素
+          $(".addcar").click(function(event) {
+              var flyer = $('<div class="flyerBg"><div>');
+              flyer.fly({
+                  start: {
+                      left: event.pageX,
+                      //开始位置（必填）#fly元素会被设置成position: fixed
+                      top: event.pageY //开始位置（必填）
+                  },
+                  end: {
+                      left: offset.left + 20,
+                      //结束位置（必填）
+                      top: offset.top + 60,
+                      //结束位置（必填）
+                      width: 0,
+                      //结束时高度
+                      height: 0 //结束时高度
+                  },
+                  autoPlay: true,
+                  //是否直接运动,默认true
+                  speed: 2,
+                  //越大越快，默认1.2
+                  onEnd: function() { //结束回调
+                      this.destory(); //移除dom
+                  }
+              });
+          });
+      });
+      </script>
+   	</body>
+</html>

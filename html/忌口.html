@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta content="yes" name="apple-mobile-web-app-capable" />
+      <meta content="yes" name="apple-touch-fullscreen" />
+      <meta content="telephone=no,email=no" name="format-detection" />
+      <meta content="maximum-dpr=1" name="flexible" />
+      <meta content="modeName=750-12" name="grid" />
+      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui,width=320">
+      <link rel="stylesheet" type="text/css" href="../css/base.css">
+      <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/page/taste.css">
+      <script type="text/javascript" src="../js/lib/flexible/flexible.debug.js"></script>
+      <script type="text/javascript" src="../js/require.js"></script>
+      <script type="text/javascript" src="../js/config.js"></script>
+      <title>姻缘签</title>
+  	</head>
+      <body onload= setTimeout("document.getElementById('loading').style.display='none'",150)>
+      	<div id="loading"></div>
+      	<div id="ui_wrap">
+      		<form>
+      			<div class="wrapper pt20" style="background:#fff;">
+      				<textarea class="taste_textarea" rows="10" placeholder="请输入特殊要求，最多50字！" maxlength="50"></textarea>
+      			</div>
+      			<div class="wrapper pb30" style="background:#fff;">
+      				<label>
+      					<input type="checkbox" name="taste"/>
+      					<span>不吃香菜</span>
+      				</label>
+      				<label>
+      					<input type="checkbox" name="taste"/>
+      					<span>不吃辣</span>
+      				</label>
+      				<label>
+      					<input type="checkbox" name="taste"/>
+      					<span>少放辣</span>
+      				</label>
+      				<label>
+      					<input type="checkbox" name="taste"/>
+      					<span>多放辣</span>
+      				</label>
+      				<label>
+      					<input type="checkbox" name="taste"/>
+      					<span>不吃蒜</span>
+      				</label>
+      			</div>
+      			<div class="wrapper pt30">
+      				<button class="form_btn">完成</button>
+      			</div>
+      		</form>
+      	</div>
+    </body>
+</html>

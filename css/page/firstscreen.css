@@ -1,0 +1,32 @@
+body{
+	background-color: #f4f4f4;
+}
+.firstscreen{
+	text-align: center;
+}
+.firstscreen > h1{
+	padding-top: 3.173333rem;
+	padding-bottom: 0.333333rem;
+	font-size: 32px;
+	color: #666666;
+}
+.firstscreen > p{
+	padding-top: 0.333333rem;
+	font-size: 16px;
+	color: #3da2f4;
+}
+.firstscreenBtn{
+	padding-top: 2.933333rem;
+}
+.firstscreenBtn > a{
+	display: block;
+	width: 6.96rem;
+	height:1.12rem;
+	line-height: 1.12rem;
+	margin: 0.466667rem auto 0;
+	border: 1px solid #3da2f4;
+	border-radius: 0.533333rem;
+	color: #3da2f4;
+	text-align: center;
+	font-size: 16px;
+}

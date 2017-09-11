@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="yes" name="apple-touch-fullscreen" />
+		<meta content="maximum-dpr=1" name="flexible" />
+		<meta content="modeName=750-12" name="grid" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui,width=320">
+		<link rel="stylesheet" type="text/css" href="../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/page/pay.css"/>
+		<script type="text/javascript" src="../js/lib/flexible/flexible.debug.js"></script>
+		<script type="text/javascript" src="../js/require.js"></script>
+		<script type="text/javascript" src="../js/config.js"></script>
+		<title>姻缘签</title>
+  	</head>
+    <body onload= setTimeout("document.getElementById('loading').style.display='none'",150)>
+    	<div id="loading"></div>
+    	<div id="ui_wrap">
+    		<form>
+      			<div class="wrapper f-tac pb30">
+      				<label>
+      					<input type="radio" checked="checked" name="taste"/>
+      					<span>100元</span>
+      				</label>
+      				<label>
+      					<input type="radio" name="taste"/>
+      					<span>500元</span>
+      				</label>
+      				<label>
+      					<input type="radio" name="taste"/>
+      					<span>1000元</span>
+      				</label>
+      			</div>
+      			<div class="wrapper mt30">
+      				<input type="submit" class="form_btn" value="支付">
+      			</div>
+      		</form>
+    	</div>
+    </body>
+</html>

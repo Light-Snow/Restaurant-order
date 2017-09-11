@@ -1,0 +1,402 @@
+html,body{
+	height: 100%;
+}
+#ui_wrap{
+	min-height: 100%;
+}
+.ui-bottom_bar{
+	z-index: 9;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+}
+.left_nav_body{
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 100%;
+}
+.left_nav{
+	width: 100%;
+	height: 100%; 
+	padding-bottom: 1.333333rem;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: #f4f4f4;
+}
+.left_nav li{
+	width: 100%;
+	padding: 14px 10px;
+	line-height: 22px;
+	font-size: 13px;
+	background-color: #f4f4f4;
+	border-bottom: 1px solid #e4e4e4;
+	color: #1c1c1c;
+	transition: all .2s;
+}
+.left_nav li.active{
+	color: #e01222;
+	background-color: #fff;
+}
+.left_nav li:nth-child(1):before{
+	content: '';
+	display: inline-block;
+	width: 13px;
+	height: 12px;
+	margin-right: 5px;
+	background: url("../../images/common/feature.png") no-repeat;
+	background-size: 100% 100%;
+}
+.content{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: 80px;
+	padding-bottom: 1.333333rem;
+	overflow-y: auto;
+}
+.content .box{
+	width: 100%;
+	padding-top: 0.266667rem;
+	padding-left: 0.333333rem;
+}
+.box .title{
+	font-size: 12px;
+	color: #3e3e3e;
+}
+.box .title:before{
+	content: '';
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    margin-right: 0.2rem;
+    margin-top: 1px;
+    background-color: #e01222;
+    vertical-align: top;
+}
+.list_main{
+	padding-top: 0.266667rem;
+}
+.list_main .img{
+	width: 2.506667rem;
+	height: 2.506667rem;
+	overflow: hidden;
+	border: 1px solid #e4e4e4;
+}
+.list_main .img img{
+	width: 2.48rem;
+	height: 2.48rem;
+}
+.list_main .name{
+	padding-top: 0.15rem;
+	font-size: 15px;
+	color: #1c1c1c;
+	font-weight: bold;
+}
+.list_main .f-dtl:nth-child(1){
+	width: 2.506667rem; 
+}
+.list_main .f-dtl:nth-child(2){
+	padding-left: 0.16rem;
+	padding-right: 0.1rem;
+}
+.list_main .member{
+	padding-top: 0.18rem;
+}
+.list_main .member > img{
+	width: 0.906667rem;
+	height: 0.373333rem;
+}
+.list_main .moeny{
+	padding-top: 0.08rem;
+}
+.list_main .moeny del{
+	font-size: 12px;
+	color: #7e7e7e;
+	text-decoration: line-through;
+}
+.list_main .moeny span{
+	display: inline-block;
+	width: 48%;
+	vertical-align: middle;
+}
+.list_main .moeny span:nth-child(1) > strong{
+	color: #e01222;
+	font-size: 15px;
+	font-weight: bold;
+}
+.list_main .moeny span:nth-child(2){
+	text-align: right;
+}
+.list_main .moeny span:nth-child(2) > button{
+	width: 0.64rem;
+	height: 0.64rem;
+	line-height: 0.021rem;
+	text-align: center;
+	font-weight: bold;
+	background-color: #fff;
+	border: 1px solid #e01222;
+	color: #e01222;
+	border-radius: 6px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.list_main .moeny .subtract{
+	background: url("../../images/index/icon/subtract.png") no-repeat 53% 50%;
+	background-size: 0.293333rem 0.04rem;
+}
+.list_main .moeny .add{
+	background: url("../../images/index/icon/add.png") no-repeat 53% 50% #e01222;
+	background-size: 0.28rem 0.28rem;
+}
+.list_main .moeny span:nth-child(2) > strong{
+	display: inline-block;
+	text-align: center;
+	width: 0.5rem;
+	height: 12px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.list_main .moeny span button.cur{
+	background: url("../../images/index/icon/add_white.png") no-repeat 53% 50% #e01222;
+	background-size: 0.28rem 0.28rem;
+	color: #fff;
+}
+.list_main .label{
+	padding-top: 0.05rem;
+	color: #f39700;
+	height: 16px;
+    overflow: hidden;
+}
+.list_main .label:before{
+	content: '';
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	margin-right: 4px;
+	vertical-align: middle;
+	background: url("../../images/index/label.png") no-repeat;
+	background-size: 100% 100%;
+}
+.flyerBg{
+	z-index: 9;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #e01222;
+}
+.ui_footer{
+	z-index: 21;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    width: 100%;
+    height: 1.333333rem;
+    background: rgba(0, 0, 0, 0.6) border-box; 
+}
+.ui_footer:before {
+	content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #1b1b20;
+    -webkit-filter: blur(27px);
+}
+.ui_footer .f_btn{
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2.933333rem;
+	height: 1.333333rem;
+	line-height: 1.4rem;
+	color: #fff;
+	background-color: #e01222;
+	font-size: 13px;
+	text-align: center;
+}
+.ui_footer .f_btn > a{
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+}
+.ui_footer .f_number{
+	z-index: 2;
+	position: absolute;
+    top: -0.5rem;
+    left: 0.266667rem;
+    width: 1.546667rem;
+    height: 1.546667rem;
+    padding-top: 0.3rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #303035;
+    background-color: #4c4c51;
+    color: #fff;
+}
+.ui_footer .f_number span{
+	padding-bottom: 0.12rem;
+    display: inline-block;
+}
+.ui_footer .f_number span strong{
+	font-size: 14px;
+}
+.ui_footer .f_number .f_number_num{
+	display: none;
+	position: absolute;
+    top: -0.1rem;
+    right: -0.1rem;
+    background-color: #e01222;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+.ui_footer .f_money{
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 1.846667rem;
+	padding-left: 0.32rem;
+	height: 1.333333rem;
+	line-height: 1.333333rem;
+	color: #fff;
+	font-size: 14px;
+}
+.ui_footer .f_money strong{
+	color: #e01222;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 0.133333rem;
+}
+.end_cur{
+	-webkit-animation: elasticity .7s ease-out backwards;
+	animation: elasticity .7s ease-out backwards;
+	webkit-transform: translateZ(0);
+	/* -moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0); */
+}
+@-webkit-keyframes elasticity {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    -webkit-transform: scale3d(.5, .5, .5);
+    transform: scale3d(.5, .5, .5);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* 
+slider
+ */
+ .slder .slder_header_before:before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1.2rem;
+}
+.slder .slder_header_after:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1.9rem;
+	background-color: #f4f4f4;
+}
+ .slder_box{
+ 	border-bottom: 1px solid #e4e4e4;
+ }
+ .slder_box{
+ 	padding-top: 0.266667rem;
+ 	padding-bottom: 0.266667rem;  
+ }
+.slder_moeny span:nth-child(1){
+ 	vertical-align: middle;
+ }
+.slder_moeny span:nth-child(1) > strong{
+	color: #e01222;
+	font-size: 15px;
+	font-weight: bold;
+	padding-right: 0.56rem;
+	text-align: right;
+}
+.slder_moeny span:nth-child(2){
+	text-align: right;
+}
+.slder_moeny span:nth-child(2) > button{
+	width: 0.64rem;
+	height: 0.64rem;
+	line-height: 0.021rem;
+	text-align: center;
+	font-weight: bold;
+	background-color: #fff;
+	border: 1px solid #e01222;
+	color: #e01222;
+	border-radius: 6px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.slder_moeny .subtract{
+	background: url("../../images/index/icon/subtract.png") no-repeat 53% 50%;
+	background-size: 0.293333rem 0.04rem;
+}
+.slder_moeny .add{
+	background: url("../../images/index/icon/add.png") no-repeat 53% 50% #e01222;
+	background-size: 0.28rem 0.28rem;
+}
+.slder_moeny span:nth-child(2) > strong{
+	display: inline-block;
+	text-align: center;
+	width: 0.5rem;
+	height: 12px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.slder_moeny span:nth-child(2) button:nth-child(3){
+	background: url("../../images/index/icon/add_white.png") no-repeat 53% 50% #e01222;
+	background-size: 0.28rem 0.28rem;
+	color: #fff;
+}

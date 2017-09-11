@@ -1,0 +1,203 @@
+#loading{
+	position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+#loading:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	height: 24px;
+	width: 24px;
+	margin-top: -12px;
+	margin-left: -12px;
+	background-color: #fff;
+	background: url("./../js/lib/layer/skin/default/loading-2.gif") no-repeat;
+	background-size: 100% 100%;
+}
+.bounceInRight{
+	-webkit-animation:bounceInRight 1s ease-out backwards;
+	-moz-animation:bounceInRight 1s ease-out backwards;
+	-ms-animation:bounceInRight 1s ease-out backwards;
+	animation:bounceInRight 1s ease-out backwards;
+}
+@keyframes bounceInRight {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.wrapper{
+	padding-left: 0.266667rem;
+	padding-right: 0.266667rem;
+}
+.f-white{
+	color: #fff;
+}
+.f-black{
+	color: #1c1c1c;
+}
+.f-black-01{
+	color: #3e3e3e;
+}
+.f-gray{
+	color: #7e7e7e;
+}
+.f-gray-01{
+	color: #ababab;
+}
+.f-gray-02{
+	color: #f0f0f0;
+}
+.f-red{
+	color: #e01222;
+}
+.f-red-01{
+	color: #ed586a;
+}
+.f-orange{
+	color: #f39700;
+}
+.hide{
+	display: none!important;
+}
+.show{
+	display: block!important;
+}
+.show_ib{
+	display: inline-block!important;
+}
+.scrollbar{
+	-webkit-overflow-scrolling : touch;
+	overflow-scrolling : touch;
+}
+.scrollbar::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+	width: 3px;
+	background-color: #bfbfbf;
+	border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar {
+	width: 3px;
+	height: 3px;
+	/* background-color: #efefef; */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+	width: 6px;
+}
+
+.scrollbar::-webkit-scrollbar:hover {
+	background-color: transparent;
+}
+.overflow-y-hidden{
+	overflow-y: hidden;
+}
+/* 
+slder
+ */
+.slder .slder_bg{
+	display: none;
+	z-index: 19;
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity .5s;
+    
+}
+.slder .slder_content{
+	z-index: 20;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	transform: translate3d(0,100%,0);
+	-webkit-transform: translate3d(0,100%,0);
+
+}
+.slder .slder_body{
+	max-height: 6rem;
+	overflow-y: auto;
+	background-color: #fff;
+}
+.slder .slder_header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1.2rem;
+	overflow: hidden;
+	padding-left: 0.266667rem;
+	background-color: #f4f4f4;
+}
+.slder .slder_header .slder_title{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	font-size: 13px;
+	color: #3e3e3e;
+}
+.slder .slder_header .slder_title:before{
+	content: '';
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    margin-right: 0.2rem;
+    background-color: #e01222;
+}
+.slder .slder_header .slder_delete{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	font-size: 13px;
+	color: #7e7e7e;
+	padding-right: 0.266667rem;
+}
+.slder .slder_header .slder_delete:before{
+	content: '';
+	display: inline-block;
+	width: 0.293333rem;
+	height: 0.32rem;
+	margin-right: 0.133333rem;
+	background: url("./../images/common/delete.png") no-repeat;
+	background-size: 100% 100%;
+	vertical-align: top;
+	margin-top: 0.44rem;
+}
+.slder_cur .slder_content{
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.slder_cur .slder_bg{
+	display: block;
+	opacity: .6;
+}

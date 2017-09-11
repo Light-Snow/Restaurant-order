@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta content="yes" name="apple-mobile-web-app-capable" />
+      <meta content="yes" name="apple-touch-fullscreen" />
+      <meta content="telephone=no,email=no" name="format-detection" />
+      <meta content="maximum-dpr=1" name="flexible" />
+      <meta content="modeName=750-12" name="grid" />
+      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui,width=320">
+      <link rel="stylesheet" type="text/css" href="../css/base.css">
+      <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/page/invoice.css">
+      <script type="text/javascript" src="../js/lib/flexible/flexible.debug.js"></script>
+      <script type="text/javascript" src="../js/require.js"></script>
+      <script type="text/javascript" src="../js/config.js"></script>
+      <title>姻缘签</title>
+  	</head>
+    <body onload= setTimeout("document.getElementById('loading').style.display='none'",150)>
+      	<div id="loading"></div>
+      	<div id="ui_wrap">
+      		<div class="invoice_add"><span>添加发票</span></div>
+      		<div class="invoice_bg wrapper">
+      			<div class="invoice_mc"><span>公司</span><span>北京燕云有限公司</span></div>
+      			<div class="invoice_mc"><span>税号</span><span>2754895</span></div>
+      			<div class="f-dte pt30 pb30 br_t">
+      				<div class="f-dtl f-vam f-tal">
+      					<input type="checkbox" id="checkbox-2" checked="checked" class="regular-checkbox f-vam">
+	                    <label class="f-vam" for="checkbox-2"></label>
+	                    <span>默认</span>
+      				</div>
+      				<div class="f-dtl f-vam f-tar">
+      					<a class="invoice_modification" href="javascript:;">修改</a>
+      					<a class="invoice_delete" href="javascript:;">删除</a>
+      				</div>
+      			</div>
+      		</div>
+      		<div class="invoice_bg wrapper">
+      			<div class="invoice_mc"><span>公司</span><span>北京燕云有限公司</span></div>
+      			<div class="invoice_mc"><span>税号</span><span>2754895</span></div>
+      			<div class="f-dte pt30 pb30 br_t">
+      				<div class="f-dtl f-vam f-tal">
+      					<input type="checkbox" id="checkbox-3" class="regular-checkbox f-vam">
+	                    <label class="f-vam" for="checkbox-3"></label>
+	                    <span>默认</span>
+      				</div>
+      				<div class="f-dtl f-vam f-tar">
+      					<a class="invoice_modification" href="javascript:;">修改</a>
+      					<a class="invoice_delete" href="javascript:;">删除</a>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+    </body>
+</html>

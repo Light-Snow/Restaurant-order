@@ -1,0 +1,107 @@
+body{
+	background-color: #f4f4f4;
+}
+.u_i_header{
+	width: 100%;
+	height: 4.933333rem;
+	background: url("../../images/ucenter/index/v0.jpg") no-repeat center;
+	background-size: 10rem 100%;
+	color: #fff;
+}
+.u_i_header.v1{
+	background: url("../../images/ucenter/index/v1.jpg") no-repeat center;
+	background-size: 10rem 100%;
+}
+.u_i_header.v2{
+	background: url("../../images/ucenter/index/v2.jpg") no-repeat center;
+	background-size: 10rem 100%;
+}
+.u_i_header > div{
+	padding-top: 1.066667rem;
+}
+.u_i_header > .f-dte >div:nth-child(1){
+	width: 2.4rem;
+	text-align: center;
+}
+.u_i_header .ewm{
+	width: 0.72rem;
+	margin-left: 0.293333rem;
+}
+.u_i_header .portrait{
+	position: relative;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.u_i_header .portrait:before{
+	content: '';
+	position: absolute;
+	bottom: -0.133333rem;
+	right: -0.133333rem;
+	width: 0.56rem;
+	height: 0.533333rem;
+	background: url("../../images/ucenter/index/v0_i.png") no-repeat;
+	background-size: 100% 100%;
+}
+.u_i_header.v1 .portrait:before{
+	background: url("../../images/ucenter/index/v1_i.png") no-repeat;
+	background-size: 100% 100%;
+}
+.u_i_header.v2 .portrait:before{
+	background: url("../../images/ucenter/index/v2_i.png") no-repeat;
+	background-size: 100% 100%;
+}
+.u_i_header .portrait > img{
+	width: 1.6rem;
+}
+.u_i_main{
+	z-index: 1;
+	position: relative;
+	top: -0.933333rem;
+}
+.u_i_show{
+	padding-left: 0.533333rem;
+	padding-right: 0.533333rem;
+}
+.u_i_show > div.f-dte{
+	height: 1.866667rem;
+	padding: 0.266667rem 0;
+	border-radius: 6px;
+	box-shadow: 0px 2px 3px 0 #d6d5d5;
+	background-color: #f0f0f0;
+}
+.u_i_show > div.f-dte > div.f-dtl{
+	width: 50%;
+}
+.u_i_show > div.f-dte > div.f-dtl:nth-child(1){
+	border-right: 1px solid #dfdfdf;
+}
+.jt_r:after{
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	width: 6px;
+	height: 12px;
+	margin-left: 0.266667rem;	
+	background: url("../../images/ucenter/particulars/jt_r.png") no-repeat;
+	background-size: 100% 100%;
+	margin-top: 1px;
+}
+.br_b{
+	border-bottom: 1px solid #e4e4e4;
+}
+.bg_white{
+	background-color: #fff;
+}
+.form_btn{
+	width: 100%;
+	height: 1.173333rem;
+	line-height: 1.173333rem;
+	border: none;
+	background-color: #e01222;
+	border-radius: 6px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+}
